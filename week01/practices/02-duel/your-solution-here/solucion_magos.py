@@ -8,13 +8,15 @@ nombre = ''
 
 for i in range(0, len(hechi_gandalf), 1):
     if (hechi_gandalf[i] > hechi_saruman[i]):
-        partidas_ganadas_gandalf = gandalf + 1
+        # partidas_ganadas_gandalf = gandalf + 1
+        gandalf += 1
         nombre = 'gandalf'
         print('El', ronda[i], 'choque lo gana', nombre, ':',
               hechi_gandalf[i], 'contra', hechi_saruman[i], ', gana el ', hechi_gandalf[i])
 
     else:
-        partidas_ganadas_saruman = saruman + 1
+        # partidas_ganadas_saruman = saruman + 1
+        saruman += 1
         nombre = 'saruman'
         print('El', ronda[i], 'choque lo gana', nombre, ':',
               hechi_gandalf[i], 'contra', hechi_saruman[i], ', gana el', hechi_saruman[i])

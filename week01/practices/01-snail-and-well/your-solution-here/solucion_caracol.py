@@ -1,4 +1,6 @@
 # Caracol y el pozo
+import statistics
+
 pozo = 125.0
 sube = 30.0
 resbala = 20.0
@@ -35,6 +37,9 @@ while i < len(avance_cm):
 
     i = i + 1
 
+st_dev = statistics.pstdev(avance_cm)
+
+print('Desviacion estandar: ' + str(st_dev))
 print('dias que tardara en recorrer:', dias)
 print('desplazamiento minimo en un dia:', minimo)
 print('desplazamiento maximo en un dia:', maximo)
